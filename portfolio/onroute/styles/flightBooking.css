@@ -1,0 +1,105 @@
+/* Selected Flight section/table styling */
+.flightSelected {
+  width: 70%;
+  padding: 2em 1em 3em 1em;
+  margin: 3em auto;
+  /* background-color: #b0c1f4; */
+  border-radius: 20px;
+  background-color: #e5f0ff;
+  box-shadow: 0px 0px 10px 2px lightgray;
+}
+
+.flightSelected__details ul {
+  padding: 0 3em;
+}
+
+.flightSelected li {
+  list-style: none;
+  border-bottom: 1px solid lightgray;
+  padding: 0.5em;
+  /* margin: 0.5em auto; */
+}
+
+.listTitle {
+  color: #002248;
+  font-weight: bold;
+}
+
+.flightSelected__details_btns {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2em auto;
+}
+
+.bookBtn {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  background-color: #002248;
+  color: white;
+  padding: 0.5em 1em;
+  margin: 0 0.5em;
+  text-decoration: none;
+  transition: 200ms;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+.bookBtn:hover {
+  background-color: #d9a21b;
+  cursor: pointer;
+}
+
+.hiddenMsg {
+  display: none;
+  font-size: 0.5em;
+  background-color: lightgrey;
+  padding: 0.5em 1em;
+  border-radius: 15px;
+}
+
+.flightSelected__details h3 {
+  margin: 4em auto;
+  text-align: center;
+}
+
+/* Empty Page styling */
+.emptyMsg {
+  font-size: 30px;
+  text-align: center;
+  padding: 30vh;
+}
+
+.emptyMsg a {
+  color: #d9a21b;
+  transition: 200ms;
+}
+
+.emptyMsg a:hover {
+  color: #002248;
+}
+
+.warning {
+  color: red;
+}
+
+.deleteBtn {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(189, 0, 0);
+  color: white;
+  padding: 0.5em 1em;
+  margin: 0 0.5em;
+  text-decoration: none;
+  transition: 200ms;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+.deleteBtn:hover {
+  background-color: rgb(255, 93, 93);
+  cursor: pointer;
+}

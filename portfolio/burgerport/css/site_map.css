@@ -1,0 +1,44 @@
+/*-----------Table of contents:
+----1. Main
+ */
+/*--------Main--------*/
+main {
+  padding: 1em;
+  overflow: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+main h2 {
+  text-align: center;
+  /*text-decoration: underline;*/
+  /*added*/
+  margin: 0;
+  line-height: 2.5em;
+  background-color: #e3dde4;
+  /*added*/
+}
+  
+}
+
+.burger-name {
+  display: block;
+  margin-bottom: .8em;
+  font-weight: 600;
+}
+
+main ul {
+  padding-left: 4em;
+  list-style: none;
+}
+
+main ul li {
+  margin-bottom: 10px;
+}
+
+main ul li:last-child {
+  margin-bottom: 0;
+}

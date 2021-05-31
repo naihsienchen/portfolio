@@ -1,0 +1,131 @@
+/* ---------- Fonts ----------- */
+/* ---------- FEEL FREE TO CHANGE STUFF----------- */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+/* ---------- Content Styling ----------- */
+main {
+  padding: 3em 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-evenly;
+  /* background-color: #fff8f0; */
+}
+
+/* Main Form Styling 8*/
+/* main form styling template
+  form {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #d9a21b;
+  border-bottom: 2px solid grey;
+  border-left: 2px solid grey;
+  padding: 1em 3em 5em 3em;
+}
+*/
+form {
+  margin-top: 1em;
+}
+
+.initialForm h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: xx-large;
+  color: white;
+}
+
+.formNav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 0 0 2em 0;
+}
+
+.formNav__link {
+  list-style: none;
+  color: #ffffff;
+  transition: 0.2s;
+  font-size: 20px;
+}
+
+.formNav__link::after {
+  content: "";
+  background-color: #ffffff;
+  display: block;
+  position: relative;
+  width: 0%;
+  height: 2px;
+  transition: all ease-in-out 300ms;
+}
+
+.formNav__link:hover {
+  cursor: pointer;
+  color: #002248;
+}
+
+.formNav__link:hover::after {
+  cursor: pointer;
+  background-color: #002248;
+  width: 100%;
+}
+
+label {
+  display: inline-block;
+  text-align: right;
+  margin-right: 0.5em;
+  vertical-align: top;
+}
+
+input {
+  display: inline-block;
+  margin-bottom: 1em;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Search Result Section */
+.searchResult {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#hotelname {/*h3 for hotel name results*/
+  text-align: center;  
+}
+
+.searchResult__container {
+  display: flex;
+  justify-content: center;
+  
+}
+/*1st div*/
+.searchResult__image {
+  margin: 1%;
+  width: 500px;
+}
+/*2nd div*/
+.searchResult__desc {
+  margin: 1%;
+  padding-left: 1em;
+  width: 250px;
+}
+/*3rd div*/
+.searchResult__form {
+  margin: 1%;
+  width: 100px;
+}
+/*input button*/
+.searchResult__form input {
+  text-align: center;
+  border-radius: 5px;
+  background-color: #d9a21b;
+  border: none;
+  border-bottom: 2px solid grey;
+  border-left: 2px solid grey;
+  padding: 0.5em;
+  color: white;
+}
+

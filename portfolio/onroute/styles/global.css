@@ -1,0 +1,177 @@
+/* ---------- Fonts ----------- */
+/* ---------- FEEL FREE TO CHANGE STUFF----------- */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
+
+/* ---------- General Styling ----------- */
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+.page {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  /* background-color: lightgrey; */
+}
+
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.5em;
+}
+
+h2 {
+  text-align: center;
+}
+
+/* ---------- Header Styling ----------- */
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #002248;
+  padding: 1.5em 0.5em;
+  align-items: center;
+}
+
+.homeLink {
+  font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+  color: #fff8f0;
+  transition: 0.3s;
+}
+
+.homeLink:hover {
+  color: #d9a21b;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.menu li {
+  margin: 0.5em 1em;
+  padding: 0.5em 0;
+}
+
+header .menu:nth-child(2) a {
+  color: #fff8f0;
+}
+
+header .menu:nth-child(2) li {
+  background-color: #d9a21b;
+  border-radius: 40px;
+  padding: 0.5em 0.75em;
+  transition: 400ms;
+}
+
+header .menu:nth-child(2) li:hover {
+  cursor: pointer;
+  background-color: #fff8f0;
+}
+
+header .menu:nth-child(2) li:hover a {
+  color: #002248;
+}
+
+header .menu:nth-child(2) li a::after {
+  content: "";
+  background-color: white;
+  display: block;
+  position: relative;
+  width: 0%;
+  height: 2px;
+  transition: all ease-in-out 300ms;
+}
+
+header .menu:nth-child(2) li a:hover::after {
+  width: 0%;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff8f0;
+  transition: 300ms;
+}
+
+.menu a::after {
+  content: "";
+  background-color: white;
+  display: block;
+  position: relative;
+  width: 0%;
+  height: 2px;
+  transition: all ease-in-out 300ms;
+}
+
+.menu a:hover {
+  color: #d9a21b;
+}
+
+.menu a:hover::after {
+  background-color: #d9a21b;
+  width: 100%;
+}
+
+/* ---------- Footer Styling ----------- */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #002248;
+  color: white;
+  padding: 1.5em;
+}
+
+footer p {
+  border-top: 1px solid lightgray;
+  width: 75%;
+  margin: 0 auto;
+  padding: 0.75em;
+  font-size: 12px;
+  color: whitesmoke;
+}
+
+footer .menu ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+footer .menu li {
+  padding: 0 1em;
+}
+
+footer .menu a {
+  text-decoration: none;
+  color: #fff8f0;
+  transition: 0.3s;
+}
+
+footer .menu a:hover {
+  color: #d9a21b;
+}

@@ -1,0 +1,88 @@
+/* STYLING FOR flightInfo.php AND flightNumberSearch.php */
+
+/* GENERAL STYLING FOR BOTH PAGES*/
+main {
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.flightTrack,
+.flightInfo {
+  flex: 1 1 100%;
+  padding: 40px 100px 40px 100px;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  border-radius: 20px;
+  background-color: #d9a21b;
+  border-bottom: 2px solid grey;
+  border-left: 2px solid grey;
+  height: 60%;
+  /* min-height: 400px; */
+}
+
+/* FOR flightInfo.php*/
+
+.flightInfoRow {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  background: skyblue;
+  box-shadow: -2px 2px 5px;
+  border-radius: 10px;
+}
+
+.flightInfoRow_item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.flightInfoRow_item li {
+  list-style-type: none;
+}
+
+.flightInfoRow ul {
+  padding: 0;
+}
+
+.flightInfo img {
+  width: 100px;
+  border: 3px solid black;
+  align-self: center;
+  box-shadow: none;
+}
+
+/* For flightNumberSearch.php */
+.flightTrack__form button {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff8f0;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5em 1.5em;
+  transition: 0.2s;
+  position: relative;
+  margin: 30px;
+}
+
+.flightTrack__form button:hover {
+  background-color: #6cbeb5;
+  border: 1px solid grey;
+}
+
+.flightTrack__form input {
+  width: 70px;
+}

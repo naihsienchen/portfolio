@@ -1,0 +1,82 @@
+main {
+  padding: 3em 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#loginForm,
+#registerForm {
+  margin: 1em;
+}
+
+form {
+  margin: 3em auto;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #d9a21b;
+  border: 2px solid grey;
+  padding: 3em;
+}
+
+.formContainer {
+  margin: 1em auto;
+}
+
+.formContainer__form {
+  width: 100%;
+  text-align: center;
+}
+
+.formContainer__form_input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 1em;
+}
+
+label {
+  display: inline-block;
+  text-align: right;
+  margin-right: 0.75em;
+  vertical-align: top;
+  width: 40%;
+}
+
+input {
+  display: inline-block;
+  margin-bottom: 1em;
+  width: 50%;
+  height: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+.loginBtn {
+  height: inherit;
+  width: 65%;
+  border-radius: 25px;
+  padding: 0.5em 1em;
+  transition: 100ms;
+}
+
+.loginBtn:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+}
+
+.tripFrom p {
+  margin-top: 0;
+  color: #d01100;
+}
+
+.forgotPassBtn {
+  color: #044186;
+  text-decoration: none;
+  transition: 100ms;
+}
+
+.forgotPassBtn:hover {
+  text-decoration: underline;
+  color: #f3f3f3;
+}

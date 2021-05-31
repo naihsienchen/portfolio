@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@400;700&display=swap');
+
+/*********************************************************
+ * TABLE OF CONTENTS
+ * =================
+ * 1. GENERAL STYLES
+ * 2. LINKS 
+ * 3. SECTIONS
+   -- 3a. header
+      -- 3a-1. main-menu
+   -- 3b. sec1
+   -- 3c. footer
+ * ================= */
+
+/* 1. GENERAL STYLES */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1.2em;
+  }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  }
+
+h1, h2, h3 {
+  font-family: 'Ubuntu', sans-serif;
+  }
+
+*, *::before, *::after {
+  box-sizing:inherit;
+  }
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  }
+
+.hidden {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  }
+
+/* 2. LINKS */
+
+a {
+  color: #2a1913;
+  font-weight: bold;
+  text-decoration: none;
+  }
+
+/* unvisited link */
+a:link {
+  color: #2a1913;
+  font-weight: bold;
+  }
+
+/* visited link */
+a:visited {
+  color: #563427;
+  font-weight: bold;
+  }
+  
+/* mouse over link */
+a:hover {
+  color: hotpink;
+  font-weight: 900;
+  }
+
+/* logo links -- v.4 */
+header > a:first-child, header > a:visited:first-child, header > a:hover:first-child {
+  color: #2a1913;
+  font-weight: bold;
+}
+
+
+/* 3. SECTIONS */
+/* 3a. header */
+
+#header {
+  /** there is an issue when zooming in and nav overflows to the buttom--link doesn't work anymore. Uncomment following to see border **/
+  /*border-color: #202228;
+  border-style: dashed;*/
+  border-width: 1px;
+  padding: 1em;
+  }
+
+#header h2 {
+  display: inline-block;
+  font-size: 2em;
+  word-spacing: -5px;
+  white-space: pre;
+  line-height: 1;
+  }
+
+#icon {
+  font-size: 2em;
+  margin-right: 10px;
+  }
+
+        /****** v.3 fix site icon. burger icon css doesn't work ******/
+        /****** v.3 fix site icon. burger icon css doesn't work ******/
+        .icon a, .icon a:link, .icon a:hover {
+        color: #2a1913;  
+        } 
+
+        #header h2 a, #header h2 a:link, #header h2 a:hover {
+        color: #2a1913;  
+        }
+        /****** v.3 fix site icon. burger icon css doesn't work ******/
+        /****** v.3 fix site icon. burger icon css doesn't work ******/
+
+    
+/* 3a-1. main-menu */
+
+#main-menu {
+  display: inline-block;
+  float: right;
+  }
+
+#main-menu ul {
+  list-style: none;
+  font-size: 1.2em;
+  padding: 0;
+  display: inline-block;
+  }
+
+#main-menu li {
+  display: inline-block;
+  margin-right:20px;
+  }
+
+/* 3b. sec1 */
+
+#sec1 {
+  position: relative;
+  text-align: center;
+  }
+
+#sec1 h2 {
+  font-size: 2em;
+  margin: 1.5em;
+  line-height: normal;
+  }
+
+#sec1 p {
+  font-size: 1.3em;
+  margin: 1em;
+  line-height: normal;
+  }
+
+#image-main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  }
+
+.row {
+  overflow: hidden;
+  }
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  }
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  }
+
+.column img {
+  width: 60%;
+  border-radius: 1px;
+  }
+
+.column a:hover img {
+  width: 63%;
+  border-radius: 1px;
+  }
+
+.height {
+}
+
+/* 3c. footer */
+
+#footer {
+  background-color: #e3dde4;
+  padding: 1em;
+  }
+
+.footer-column {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  width: 50%;
+  /*-moz-column-count: 2;
+  -moz-column-gap: 20px;
+  -moz-column-fill: auto;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 20px;
+  -webkit-column-fill: auto;
+  column-count: 2;
+  column-gap: 20px;
+  column-fill: auto;
+  width: 50%;*/
+  }
+
+#footer-nav {
+  padding:10px;
+  }
+
+#footer-nav ul {
+  list-style: none;
+  font-size: 1em;
+  padding:0;
+  margin: auto 0 10px;
+  }
+
+#footer-nav li {
+  list-style: none;
+  padding:0.5em;
+  }
+
+#break {
+break-after: column;
+}
+
+#copyright {
+  font-size: 0.8em;
+  padding-top: 0.5em;
+  border-top: 1px solid #564759;
+  }
+

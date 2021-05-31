@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tickets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tickets.xsd">
+  <ticket>
+    <ticketid>t00001</ticketid>
+    <userid>2</userid>
+    <issuedatetime>2021-02-05T12:25:10-05:00</issuedatetime>
+    <status>open</status>
+    <!--open | on-going | resolved-->
+    <!--default: open-->
+    <subject>My humber mail doesn't work</subject>
+    <messages>
+      <!-- use datetime to track msgs -->
+      <message>
+        <userid>2</userid>
+        <!-- dateTime: -5 = toronto UTC time -->
+        <msgDateTime>2021-02-05T12:30:10-05:00</msgDateTime>
+        <msgtext>Hi, my humber mail doesn't work. What do I do?</msgtext>
+      </message>
+      <message>
+        <userid>1</userid>
+        <!-- dateTime: -5 = toronto UTC time -->
+        <msgDateTime>2021-02-06T13:30:10-05:00</msgDateTime>
+        <msgtext>Hi, if your problem is the password, please try to reset the password by clicking "forget password".</msgtext>
+      </message>
+    </messages>
+  </ticket>
+  <ticket>
+    <ticketid>t00002</ticketid>
+    <userid>68</userid>
+    <issuedatetime>2021-02-16T08:28:10-05:00</issuedatetime>
+    <status>open</status>
+    <!--open | on-going | resolved-->
+    <!--default: open-->
+    <subject>How do I log in job portal?</subject>
+    <messages>
+      <message>
+        <userid>68</userid>
+        <msgDateTime>2021-02-16T08:30:10-05:00</msgDateTime>
+        <msgtext>Hi, do I need to apply for a different credential to log in job portal?</msgtext>
+      </message>
+      <message>
+        <userid>8</userid>
+        <msgDateTime>2021-02-17T01:30:10-05:00</msgDateTime>
+        <msgtext>Yes. you can find further instruction here http://careerconnect.humber.ca/ </msgtext>
+      </message>
+    </messages>
+  </ticket>
+</tickets>

@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
+
+/* ---------- Content Styling ----------- */
+main {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-evenly;
+  /* background-color: #fff8f0; */
+}
+
+.mainQuote {
+  display: flex;
+  margin: -2px 0;
+  background-color: #d9a21b;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2em;
+  opacity: 0;
+  animation-name: textReveal;
+  animation-duration: 1s;
+  animation-delay: 0.75s;
+  animation-fill-mode: forwards;
+}
+
+.mainQuote h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  width: 80%;
+  margin: 0 -2px;
+}
+.mainQuote h2,
+.mainQuote i {
+  opacity: 0;
+  animation-name: textReveal;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.mainQuote h2:hover {
+  cursor: default;
+}
+
+svg {
+  opacity: 0;
+  animation-name: textReveal;
+  animation-duration: 1s;
+  animation-delay: 0.75s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes textReveal {
+  0% {
+    margin: 0;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.mainQuote h2::after {
+  content: "";
+  background-color: white;
+  display: block;
+  position: relative;
+  left: -1px;
+  top: -3.5px;
+  width: 101%;
+  height: 6px;
+  transition: all ease-in-out 600ms;
+}
+
+@supports (-moz-appearance: none) {
+  .mainQuote h2::after {
+    top: -8.5px;
+  }
+}
+
+.mainQuote h2:hover::after {
+  background-color: white;
+  width: 0%;
+}
+
+.mainQuote i {
+  font-size: 50px;
+}
+
+/* Banner Section Styling */
+.banner {
+  margin: 2em 0;
+  background-image: url("../images/index/simon-migaj-Banner-unsplash.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150%;
+  height: 40vw;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner h2 {
+  font-size: 50px;
+  align-items: center;
+}
+
+/* Deals Section Styling */
+.deals {
+  padding: 2em 0;
+}
+
+.deals__popular h2 {
+  width: 100%;
+  color: #002248;
+  border-bottom: 2px solid #002248;
+  text-align: left;
+}
+
+.deals__popular {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2em 3em 3em 3em;
+  justify-content: space-evenly;
+}
+
+.deals__popular_opt {
+  margin: 2em 3em;
+  position: relative;
+  transition: 300ms;
+}
+
+.deals__popular_opt:hover {
+  background-color: #aaaaaa;
+  box-shadow: -10px 10px 5px #aaaaaa;
+}
+
+.deals__popular_opt img {
+  height: 175px;
+}
+
+.deals__popular_opt::after {
+  text-align: center;
+  background-color: #b0c1f4;
+  position: absolute;
+  padding: 0.5em 1em;
+  width: 50%;
+  border-radius: 15px;
+  bottom: 0;
+  right: -20px;
+  transition: 300ms;
+}
+
+.deals__popular_opt:hover::after {
+  color: white;
+  background-color: #002248;
+  cursor: pointer;
+  box-shadow: 0px 5px 5px #aaaaaa;
+}
+
+.deals__popular_opt:nth-child(2)::after {
+  content: "New York";
+}
+.deals__popular_opt:nth-child(3)::after {
+  content: "Paris";
+}
+.deals__popular_opt:nth-child(4)::after {
+  content: "Japan";
+}
+.deals__popular_opt:nth-child(5)::after {
+  content: "Mexico";
+}
+
+.deals__popular_opt a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.deals__popular_opt a:hover {
+  color: dimgray;
+}
+
+@media all and (max-width: 1000px) {
+  .mainQuote {
+    margin: -3px 0;
+  }
+  .mainQuote h2 {
+    margin: 0 1em;
+  }
+
+  .mainQuote h2::after {
+    display: none;
+  }
+
+  .mainQuote h2:hover::after {
+    display: none;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .mainQuote i {
+    display: none;
+  }
+}
+
+@media all and (max-width: 575px) {
+  .banner {
+    background-attachment: initial;
+  }
+}
+
+@media all and (max-width: 575px) {
+  .banner h2 {
+    font-size: 30px;
+  }
+}

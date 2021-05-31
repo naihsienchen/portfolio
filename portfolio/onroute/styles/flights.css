@@ -1,0 +1,371 @@
+main {
+  padding: 3em 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 85vh;
+  /* background-color: #fff8f0; */
+}
+
+/* Use '.menu a' transition from global.css, apply new color on hover */
+
+.secondSearch {
+  width: 75%;
+  margin: 3em auto;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #d9a21b;
+  border-bottom: 2px solid grey;
+  border-left: 2px solid grey;
+  padding: 4em 3em;
+}
+
+.tripFrom__input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 1em;
+}
+
+.tripFrom__input_btn {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff8f0;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5em 1.5em;
+  transition: 0.2s;
+  position: absolute;
+}
+
+.tripFrom__input_btn:hover {
+  background-color: #6cbeb5;
+  border: 1px solid grey;
+}
+
+label {
+  display: inline-block;
+  text-align: right;
+  margin-right: 0.5em;
+  vertical-align: top;
+}
+
+input {
+  display: inline-block;
+  margin-bottom: 1em;
+  font-family: "Poppins", sans-serif;
+}
+
+/* MAIN SEARCH BAR DIV STYLING */
+.searchDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5em;
+}
+
+.searchDiv__field input {
+  width: 65vw;
+  border-radius: 15px;
+  border: none;
+  padding-left: 1em;
+  margin: 0;
+}
+
+.searchDiv__field input:focus {
+  outline: none;
+}
+
+.searchDiv__field_bar {
+  border-radius: 20px;
+  border: 2px solid #d9a21b;
+  margin: 0 auto;
+}
+
+.searchDiv__field {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.searchBtn {
+  background-color: white;
+  color: #d9a21b;
+  border-radius: 50px;
+  padding: 0.5em;
+  border: none;
+  transition: 300ms;
+}
+
+.searchBtn:hover {
+  background-color: #d9a21b;
+  color: white;
+  cursor: pointer;
+}
+
+/* Search Result table styling */
+table {
+  margin: 0 auto;
+  text-align: left;
+  border-collapse: collapse;
+  background-color: #d2e1f7;
+  box-shadow: 0 0 5px #888888;
+}
+
+.tableWrapper {
+  margin: 0 2em;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+h3 {
+  margin: 1em auto;
+}
+
+thead {
+  background-color: #002248;
+  color: #feffff;
+}
+
+tr {
+  border-bottom: 1px solid black;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fafbfd;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 1em;
+}
+
+.bookBtn {
+  border: none;
+  border-radius: 10px;
+  background-color: #002248;
+  color: white;
+  padding: 0.5em 1em;
+  margin: 0;
+  transition: 200ms;
+}
+
+.bookBtn:hover {
+  background-color: #d39a09;
+  cursor: pointer;
+}
+
+.hiddenMsg {
+  display: none;
+  font-size: 0.5em;
+  background-color: lightgrey;
+  padding: 0.5em 1em;
+  border-radius: 15px;
+  text-align: center;
+}
+
+/* Error Message Styling */
+.errMsg {
+  color: red;
+  margin: 1em auto;
+}
+
+/*Extra Options Styling*/
+.otherOptions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 3em;
+  margin-top: 2em;
+  justify-content: space-evenly;
+}
+
+.otherOptions h2 {
+  width: 100%;
+  color: #002248;
+  border-bottom: 2px solid #002248;
+  text-align: left;
+}
+
+.otherOptions__opt {
+  margin: 2em auto;
+  position: relative;
+  transition: 300ms;
+}
+
+.otherOptions__opt:hover {
+  background-color: #aaaaaa;
+  box-shadow: -10px 10px 5px #aaaaaa;
+}
+
+.otherOptions__opt img {
+  height: 250px;
+}
+
+.otherOptions__opt::after {
+  text-align: center;
+  background-color: #b0c1f4;
+  position: absolute;
+  padding: 0.5em 1em;
+  width: 60%;
+  border-radius: 15px;
+  bottom: 0;
+  right: -20px;
+  transition: 300ms;
+}
+
+.otherOptions__opt:hover::after {
+  color: white;
+  background-color: #002248;
+  cursor: pointer;
+  box-shadow: 0px 5px 5px #aaaaaa;
+}
+
+.otherOptions__opt:nth-child(2)::after {
+  content: "Flight Tracking";
+}
+.otherOptions__opt:nth-child(3)::after {
+  content: "Meal Selection";
+}
+
+.otherOptions__opt:nth-child(4) {
+  border-top: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+}
+.otherOptions__opt:nth-child(4)::after {
+  content: "Seat Selection";
+}
+
+.otherOptions__opt a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.otherOptions__opta:hover {
+  color: dimgray;
+}
+
+.otherOptions__msg {
+  width: 50%;
+  margin: 0 auto;
+  padding: 0.75em;
+  text-align: center;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+.otherOptions__msg a {
+  color: #002248;
+  transition: 200ms;
+}
+
+.otherOptions__msg a:hover {
+  color: #d39a09;
+}
+
+.viewBtn {
+  background-color: #002248;
+  text-decoration: none;
+  color: white;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  padding: 0.25em 0.5em;
+  border-radius: 15px;
+  transition: 200ms;
+}
+
+.viewBtn:hover {
+  background-color: #2a67ac;
+  cursor: pointer;
+}
+
+.addBtn {
+  border: none;
+  border-radius: 5px;
+  background-color: #002248;
+  color: white;
+  padding: 0.5em 0.75em;
+  margin: 0;
+  text-decoration: none;
+  transition: 200ms;
+  font-family: "Poppins", sans-serif;
+}
+
+.addBtn:hover {
+  background-color: #2a67ac;
+  cursor: pointer;
+}
+
+.deleteBtn {
+  border: none;
+  border-radius: 5px;
+  background-color: #d9a21b;
+  color: white;
+  padding: 0.5em 0.75em;
+  margin: 0;
+  text-decoration: none;
+  transition: 200ms;
+  font-family: "Poppins", sans-serif;
+}
+.deleteBtn:hover {
+  background-color: #ffb700;
+  cursor: pointer;
+}
+
+.linkBtn {
+  background-color: #002248;
+  text-decoration: none;
+  color: white;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  padding: 0.25em 0.5em;
+  border-radius: 15px;
+  transition: 200ms;
+}
+
+.linkBtn:hover {
+  background-color: #2a67ac;
+  cursor: pointer;
+}
+
+.unavailable {
+  font-size: 12px;
+  background-color: lightgrey;
+  border-radius: 15px;
+  padding: 0.25em 0.5em;
+  text-align: center;
+}
+
+.banner {
+  margin: 2em 0;
+  background-image: url("../images/flights/kaotaru-dCOuYgsm9X8-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 65%;
+  background-size: 100%;
+  height: 25vw;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner h2 {
+  font-size: 30px;
+}
+.banner a {
+  background-color: #2a67ac;
+  border: 3px solid #2a67ac;
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 50px;
+  transition: 400ms;
+}
+
+.banner a:hover {
+  background-color: white;
+  color: #2a67ac;
+}

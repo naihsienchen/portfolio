@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\helpdeskV2"
+		},
+		{
+			"path": "..\\..\\helpdeskV1"
+		},
+		{
+			"path": "..\\..\\5203_XML\\Module 6\\domphp\\domphp"
+		},
+		{
+			"path": "portfolio\\burgerport"
+		},
+		{
+			"path": "portfolio\\greenthumb"
+		},
+		{
+			"path": "portfolio\\helpdesk"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "greenthumb"
+	}
+}

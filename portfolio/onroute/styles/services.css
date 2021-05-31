@@ -1,0 +1,128 @@
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.covid,
+.faq,
+.contact {
+  border: 2px solid black;
+  border-radius: 25px;
+  margin: 3em 1em;
+  padding: 1em;
+}
+.covid {
+  background-color: #f1f1e6;
+  width: 40%;
+}
+
+.faq {
+  background-color: #f1f1e6;
+  width: 40%;
+}
+
+.faq p {
+  margin-top: 0;
+}
+
+.contact {
+  background-color: #f1f1e6;
+}
+
+.contact h3 {
+  flex: 100%;
+  margin: 0;
+}
+
+.form h4 {
+  margin: 0;
+}
+
+.info h4 {
+  border-bottom: 2px solid black;
+}
+.info p {
+  padding: 0.5em 1em;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.infoLink {
+  color: black;
+  text-decoration: none;
+  transition: 200ms;
+}
+
+.infoLink:hover {
+  color: #d9a21b;
+}
+
+.info,
+.form {
+  min-width: 300px;
+}
+
+#name-label,
+#email-label,
+#message-label {
+  display: none;
+}
+
+#name-input,
+#email-input,
+#message-input {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  background-color: white;
+  border-style: none;
+  height: 2em;
+  padding: 0.5em;
+  margin: 0.5em 0;
+}
+
+#message-input {
+  height: 125px;
+  resize: none;
+  margin: 0 auto;
+}
+
+#message-box {
+  width: 100%;
+}
+
+.contactform__submit {
+  text-align: center;
+}
+
+#submit-button {
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  margin-top: 0.2em;
+  background-color: #002248;
+  border-style: none;
+  color: white;
+  width: 20%;
+  align-items: center;
+  transition: 0.3s;
+}
+
+#submit-button:hover,
+#submit-button:active {
+  cursor: pointer;
+  background-color: #d9a21b;
+}
+
+h4 {
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+
+.source a {
+  color: #002248;
+}
+
+.source a:hover {
+  color: #004797;
+}

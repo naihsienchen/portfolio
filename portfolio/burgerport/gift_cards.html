@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Burger Port - Gift Cards</title>
+        <meta name="description" content="exotic burger experience">
+        <link rel="stylesheet" type="text/css" href="css/global.css">
+        <link rel="stylesheet" type="text/css" href="css/gift_cards.css">
+        <script data-search-pseudo-elements defer src="https://kit.fontawesome.com/d5d901e044.js" crossorigin="anonymous"></script>
+        <script src="js/gift_cards.js"></script>
+    </head>
+
+    <body>
+        <div class="page-container">
+            <!--Header Content-->
+            <header id="header" class="row">
+                <a href="index.html"><span id="icon" class="fas fa-hamburger icon" aria-hidden="true"></span>
+                <span class="hidden">icon</span>
+                <h2 id="site-name">Burger
+Port___.</h2></a>
+                <nav id=main-menu>
+                <h3 class="hidden">Main navigation</h3>
+                    <ul>
+                        <li><a href="menu.html">menu</a></li>
+                        <li><a href="about_us.html">about us</a></li>
+                        <li><a href="contest.html">contest</a></li>
+                        <li><a href="gift_cards.html">gift cards</a></li>
+                        <li><a href="locations.html">locations</a></li>
+                        <li><a href="contact_us.html">contact us</a></li>
+                        <li><a href="site_map.html">site map</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <main id="main">
+        
+                <!-- Section Header -->
+                <section id="description">
+                    <h1>Gift Cards</h1>
+                    <p>Give the gift of international burgers. Anytime, anywhere!</p>
+                </section>
+
+                <!-- Banner Image -->
+                <img id="image-main" src="images/giftcards-main.jpeg" alt="Image of waiter serving plate with 2 burgers on it">
+
+                <!-- Purchasing a Gift Card Section -->
+                <section id="giftCard">
+                    <h2 id="buyGCTitle">Purchase a Gift Card</h2>
+                    <form class="giftCardForm" id="buyGCForm" action="#" method="post" name="buy_gc">
+                        <div id="giftCardForm">
+                            <div class="textbox">
+                                <label id="amount" for="amountInput">Amount</label>
+                                <input type="text" id="amountInput" name="amount">
+                            </div>
+                            <div class="textbox">
+                                <label id="name" for="nameInput">Receipient's Name</label>
+                                <input type="text" id="nameInput" name="name">
+                            </div>
+                            <div class="textbox">
+                                <label id="email" for="emailInput">Receipient's Email</label>
+                                <input type="text" id="emailInput" name="email">
+                            </div>
+                            <div class="textbox">
+                                <label id="sender" for="senderInput">Sender's Name</label>
+                                <input type="text" id="senderInput" name="name">
+                            </div>
+                            <div class="textbox">
+                                <label id="amount" for="deliveryDateInput">Delivery Date</label>
+                                <input type="date" id="deliveryDateInput" name="deliveryDate">
+                            </div>
+                            <div id="messageBox">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message">Enjoy your giftcard to Burger Port!</textarea>
+                            </div>
+                            <div id="payNow">
+                                <button id="payButton" type="submit">PAY NOW</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div id="thanksMsg">
+                        <h2>Thank you <span id="buyerName"></span> for your purchase!</h2>
+                        <p>A giftcard of <span id="gcAmount"></span> will be sent to <span id="gcEmail"></span> on <span id="sendDate"></span> with the following message:</p>
+                        <p><span id="customerMsg"></span></p>
+                        <button class="refreshBtn">Purchase Another Card</button>
+                    </div>
+
+                </section>
+
+                <!-- Checking a Gift Card Section -->
+                <section id="balance">
+                    <h2 id="checkGCTitle">Check Balance of Existing Gift Card</h2>
+                    <form class="giftCardForm" action="" method="post" name="check_gc" id="checkGCForm">
+                        <div id="giftCardBalance">
+                            <div class="textbox">
+                                <label id="gcNumber" for="gcNumberInput">Gift Card Number</label>
+                                <input type="text" id="gcNumberInput" name="gcNumber">
+                                <span id="gcNumberErr"></span>
+                            </div>
+                            <div class="textbox">
+                                <label id="gcPin" for="gcPinInput">Pin</label>
+                                <input type="text" id="gcPinInput" name="gcPin">
+                                <span id="gcPinErr"></span>
+                            </div>
+                            <div id="balanceCheck">
+                                <button id="checkBalnce" type="submit">CHECK BALANCE</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div id="balanceMsg">
+                        <h2>Gift Card Number: <span id="gcNumberDisplay"></span></h2>
+                        <p>Remaining Balance: <span id="gcAmountBalance"></span></p>
+                        <button class="refreshBtn">Check Balance of Another Card</button>
+                    </div>
+                </section>
+           
+            </main>
+
+            <!-- Footer Content-->
+            <footer id="footer">
+                <nav id="footer-nav">
+                    <h3 class="hidden">Footer navigation</h3>
+                    <div>
+                        <ul class="footer-column">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="menu.html">menu</a></li>
+                        <li><a href="about_us.html">about us</a></li>
+                        <li id="break"><a href="contest.html">contest</a></li>
+                        <li><a href="gift_cards.html">gift cards</a></li>
+                        <li><a href="locations.html">location</a></li>
+                        <li><a href="contact_us.html">contact us</a></li>
+                        <li><a href="site_map.html">site map</a></li>
+                        </ul>
+                    </div>        
+                </nav>
+                <div id="copyright">© Copyright Burger Port, 2020. All rights reserved. This is a fake website for HTTP5103.</div>
+            </footer>
+        </div>
+    </body>
+</html>

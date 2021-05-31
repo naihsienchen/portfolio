@@ -1,0 +1,345 @@
+/* ---------- Fonts ----------- */
+/* ---------- FEEL FREE TO CHANGE STUFF----------- */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+/* ---------- General Styling ----------- */
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+.page {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  /* background-color: lightgrey; */
+}
+
+h2 {
+  text-align: center;
+}
+
+/* ---------- Header Styling ----------- */
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #002248;
+  border-bottom: 1px solid black;
+  padding: 0.5em;
+}
+
+.homeLink {
+  font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+  color: #fff8f0;
+  transition: 0.3s;
+}
+
+.homeLink:hover {
+  color: #637caa;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.menu li {
+  padding: 1em;
+}
+.menu a {
+  text-decoration: none;
+  color: #fff8f0;
+  transition: 300ms;
+}
+
+.menu a::after {
+  content: "";
+  background-color: white;
+  display: block;
+  position: relative;
+  width: 0%;
+  height: 2px;
+  transition: all ease-in-out 300ms;
+}
+
+.menu a:hover {
+  color: #d9a21b;
+}
+
+.menu a:hover::after {
+  background-color: #d9a21b;
+  width: 100%;
+}
+
+/* ---------- Content Styling ----------- */
+main {
+  padding: 3em 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-evenly;
+  /* background-color: #fff8f0; */
+}
+
+/* Main Form Styling 8*/
+form {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #d9a21b;
+  border-bottom: 2px solid grey;
+  border-left: 2px solid grey;
+  padding: 1em 3em 5em 3em;
+}
+
+.initialForm h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: xx-large;
+  color: white;
+}
+
+.formNav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 0 0 2em 0;
+}
+
+.formNav__link {
+  list-style: none;
+  color: #ffffff;
+  transition: 0.2s;
+  font-size: 20px;
+}
+
+.formNav__link::after {
+  content: "";
+  background-color: #ffffff;
+  display: block;
+  position: relative;
+  width: 0%;
+  height: 2px;
+  transition: all ease-in-out 300ms;
+}
+
+.formNav__link:hover {
+  cursor: pointer;
+  color: #002248;
+}
+
+.formNav__link:hover::after {
+  cursor: pointer;
+  background-color: #002248;
+  width: 100%;
+}
+
+.tripFrom {
+  /*changed display from none to initial*/
+  display: initial;
+  width: 100%;
+  text-align: center;
+  /* add flex box */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tripFrom__input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 1em;
+  margin-left: 0.5em;
+}
+
+.tripFrom__input_btn {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff8f0;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5em 1.5em;
+  margin-left: 0.5em;
+  transition: 0.2s;
+  /*position: absolute;*/
+  position: static;
+}
+
+.tripFrom__input_btn:hover {
+  background-color: #6cbeb5;
+  border: 1px solid grey;
+}
+
+label {
+  display: inline-block;
+  text-align: right;
+  margin-right: 0.5em;
+  vertical-align: top;
+}
+
+input {
+  display: inline-block;
+  margin-bottom: 1em;
+  font-family: "Poppins", sans-serif;
+}
+
+/* .background {
+  background-color: #e6f4f1;
+  height: 40vw;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0;
+  position: absolute;
+  z-index: -1;
+} */
+
+/* Search Result Section Styling by NHC */
+.searchResult {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#hotelname {/*h3 for hotel name results*/
+  text-align: center;  
+}
+
+.searchResult__container {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.searchResult__container>div {
+  margin: 1%;
+  width: 500px;
+}
+
+table {
+  width: 90vw;
+  border: 1px dotted #002248;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+/* Deals Section Styling */
+.deals {
+  padding: 2em 0;
+}
+
+/* comment out by Nai-Hsien */
+.deals h2 {
+  /* border-bottom: 1px solid lightgrey; */
+  border-bottom: none;
+}
+
+.deals__popular h3,
+.deals__budget h3 {
+  width: 100%;
+}
+
+.deals__popular,
+.deals__budget {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0.5em;
+  justify-content: center;
+}
+
+.deals__popular_opt,
+.deals__budget_opt {
+  padding: 0 1em;
+  margin-bottom: 1em;
+  /*
+  border: 1px solid black;
+  background-color: #637caa;
+  */
+  border: none;
+  background-color: transparent;
+}
+
+.deals__popular_opt a,
+.deals__budget_opt a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.deals__popular_opt a:hover,
+.deals__budget_opt a:hover {
+  color: dimgray;
+}
+
+.deals img {
+  height: 20vh;
+}
+
+/* ---------- Footer Styling ----------- */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #002248;
+  padding: 1em;
+}
+
+footer p {
+  margin-top: 0;
+}
+
+footer .menu ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+footer .menu li {
+  padding: 0 1em;
+}
+
+footer .menu a {
+  text-decoration: none;
+  color: #fff8f0;
+  transition: 0.3s;
+}
+
+footer .menu a:hover {
+  color: #d9a21b;
+}
+
+/*======pages======*/
+/*======hotelBooking======*/
+.hotelBooking__content {
+  margin: 1rem;
+}
+
+.hotelBooking__confirm {
+  margin: auto;
+  width: 60%;
+}
+
+.hotelBooking__confrim_table {
+  margin: auto;
+  width: 100% !important; 
+}

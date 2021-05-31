@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contest</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/contest.css">
+        <link rel="stylesheet" type="text/css" href="css/global.css">
+        <script type="text/javascript" src="JS/contest.js"></script>
+        <!-- IF JQUERY <script type="text/javascript" src="filepath/jquery-x.x.x.js"></script>-->
+        <!-- IF JQUERY <script type="text/javascript" src="filepath/jquery-x.x.x.js"></script>-->
+        <script data-search-pseudo-elements defer src="https://kit.fontawesome.com/d5d901e044.js" crossorigin="anonymous"></script>
+    </head>
+    <body id=pageContainer>
+        <header id="header" class="row">
+            <a href="index.html"><span id="icon" class="fas fa-hamburger icon" aria-hidden="true"></span>
+            <span class="hidden">icon</span>
+            <h2 id="site-name">Burger
+    Port___.</h2></a>
+            <nav id=main-menu>
+              <h3 class="hidden">Main navigation</h3>
+              <ul>
+                <li><a href="menu.html">menu</a></li>
+                <li><a href="about_us.html">about us</a></li>
+                <li><a href="contest.html">contest</a></li>
+                <li><a href="gift_cards.html">gift cards</a></li>
+                <li><a href="locations.html">locations</a></li>
+                <li><a href="contact_us.html">contact us</a></li>
+                <li><a href="site_map.html">site map</a></li>
+              </ul>
+            </nav>
+        </header>
+        <main>
+                
+            <section id=raffle>
+                <h1>Raffle to Support Small Businesses</h1>
+                <p>Enter for a chance to win any of the tremendouse prizes below! All proceeds from this raffle go to help small business owners who have suffered due to COVID-19 related shut-downs</p>
+            </section>
+            <section id="prizes">
+                <h2>What you Could Win:</h2>
+                <div>
+                    <div class=column>
+                        <img src="images/prize1.jpg" alt="picture of truck">
+                        <p>One of 5 Toyota Trucks</p>
+                    </div>
+                    <div class=column>
+                        <img src="images/prize2.jpg" alt="picture of vacation island">
+                        <p>One of 10 vacation packages to the Caribbean</p>
+                    </div>
+                    <div class=column>
+                        <img src="images/prize3.jpg" alt="picture of bicycle">
+                        <p>One of 25 trail bikes</p>
+                    </div>
+                </div>
+                <div id=prizeDesc>
+                    <p>Tickets are on sale for $5 each for a limited time only. </p>
+                </div>
+            </section>
+            <section id=tickets>
+                <form action="#" method="POST" name="purchaseTickets" id="purchaseTickets">
+                                        
+
+                <h2>Purchase Tickets</h2>
+                <fieldset>
+                    <div id=customerinfo class=fieldDiv>
+                        <label for="name">Name:</label>
+                        <input type=text id=name name=name placeholder = "Your Name"/>
+                        
+                        <label for="email">Email:</label>
+                        <input type=text id=email name=email placeholder="Your Email"/>
+                    </div>
+                    <div id=creditInfo class=fieldDiv>
+                        <label for="card">Credit Card #(no dashes):</label>
+                        <input type=text id=card name=card placeholder="xxxxxxxxxxxxxxxx"/>
+                    </div>
+                    <div id=creditExp class=fieldDiv>
+                        <label for="cvv">CVV:</label>
+                        <input type=text id=cvv name=cvv placeholder="xxx"/>
+                        <label for="expiry">Expiry:</label>
+                        <input type=text id="expiry" name="expiry" placeholder="mm/yy"/>
+                    </div>
+                    <div id=ticketInfo class=fieldDiv>
+                        <label for="numTickets">#Tickets</label>
+                        <select id="numTickets" name="numTickets"></select>
+                        <span>Your subtotal is:<span id=subTotal></span></span>
+                    </div>
+                    <div>
+                        <input type="submit" value="Purchase" name="purchaseSubmit" />
+                    </div>
+                </fieldset>
+                </form>
+            </section>
+        </main>
+        <section id="purchaseConfirm">
+            <h2>Purchase Confirmed!</h2>
+            <p id=thxMsg></p>
+        </section>
+        <footer id="footer">
+            <nav id="footer-nav">
+              <h3 class="hidden">Footer navigation</h3>
+              <div>
+                <ul class="footer-column">
+                  <li><a href="index.html">home</a></li>
+                  <li><a href="menu.html">menu</a></li>
+                  <li><a href="about_us.html">about us</a></li>
+                  <li id="break"><a href="contest.html">contest</a></li>
+                  <li><a href="gift_cards.html">gift cards</a></li>
+                  <li><a href="locations.html">locations</a></li>
+                  <li><a href="contact_us.html">contact us</a></li>
+                  <li><a href="site_map.html">site map</a></li>
+                </ul>
+              </div>        
+            </nav>
+            <div id="copyright">© Copyright Burger Port, 2020. All rights reserved. This is a fake website for HTTP5103.</div>
+        </footer>
+    </body>
+</html>

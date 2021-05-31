@@ -1,0 +1,102 @@
+h1{
+    font-size: 2em;
+    margin: 0;
+    padding: 5px 0;
+}
+
+h3{
+    margin-bottom: 0;
+}
+
+p{
+    margin: 0;
+}
+
+#sidesLink{
+    margin-right: 2em;
+}
+
+#description{
+    text-align: center;
+    background-color: #e3dde4;
+    padding: 1.5em;
+}
+
+#image-main{
+    height: 450px;
+}
+
+#description p{
+    font-size: 0.8em;
+}
+
+#fullMenu{
+    text-align: center;
+}
+
+/* -------- Regions Section Styling -------- */
+#regions{
+    margin: 0;
+    text-align: center;
+}
+
+#regionTitle{
+    margin: 0;
+    /*text-decoration: underline;*/
+}
+
+.regionChoice{
+    margin: auto 25%;
+}
+
+#regions ul {
+    list-style: none;
+    font-size: 1.2em;
+    padding: 0;
+    display: inline-block;
+}
+  
+#regions li {
+    display: inline-block;
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+#american, #european, #asian, #latin, #sides{
+    padding: 1em;
+    border-radius: 50px;
+}
+
+#american{
+    background-color: #fbf5fc;
+}
+
+#asian{
+    background-color: #f3ebf5;
+}  
+
+#european{
+    background-color: #e4dbe6;
+}
+
+#latin{
+    background-color: #d7c9da;
+}
+
+.price{
+    margin-top: 0;
+}
+
+#sidesList li{
+    display: inline;
+}
+
+#sidesList li + li::before {
+    content: ' | ';
+  }
+
+#regionMain{
+    display: inline-block;
+    width: 50%;
+    padding: 3em 0;;
+}

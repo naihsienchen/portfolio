@@ -1,0 +1,75 @@
+.masthead-heading.mb-0 {
+display: inline-block;
+/*color: red;*/
+}
+.main {
+    margin-top: 10vh;
+    align-items: center; /* new */
+}
+
+.icon {
+    margin: 2.5vh;
+}
+
+.avartar {
+    margin: 5vh;
+}
+
+.img-fluid.rounded.mb-5 {
+    margin-bottom: 1rem !important;
+}
+
+.d-block.mb-5 {
+    margin-bottom: 0.5rem !important;
+}
+
+.modal-btn {
+    margin: 5vh;
+}
+
+.lg-8 {
+    width: 80%;
+}
+/*
+.table {
+    
+    border-spacing: 0 5px !important;
+}
+*/
+.table.borderless {
+    text-align: left;
+    width: 60%;
+    margin: auto;
+}
+
+.borderless td, .borderless th {
+    border: none;
+    text-align: left;
+    border-spacing: 0 15px !important;
+}
+
+ul {
+    list-style-type:none;
+    padding-left: 0;
+}
+
+.test-credential {
+    color: blue;
+}
+
+/*animation*/
+.test-credential.welcome {
+    color: salmon;
+    animation:blinkingText 1.2s infinite;
+}
+
+.blinking{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: salmon;}
+    49%{    color: salmon;}
+    60%{    color: transparent;}
+    99%{    color: transparent;}
+    100%{   color: salmon;}
+}

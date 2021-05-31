@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+
+/*********************************************************
+ * TABLE OF CONTENTS
+ * =================
+ * 1. GENERAL STYLES
+ * 2. SECTIONS
+   -- 2a. header
+   -- 2b. sec1
+   -- 2c. sec2
+   -- 2d. sec3
+   -- 2e. sec4
+   -- 2f. footer
+ * 3. LINKS
+ * 4. BUTTONS
+   -- 4a. button general 
+   -- 4b. button shadow 
+   -- 4c. section buttons
+ * ================= */
+
+/* 1. GENERAL STYLES */
+
+html {
+  box-sizing:border-box;
+  font-size: 16px;
+  line-height: 1.2em;
+}
+
+body {
+font-family: 'Open Sans', sans-serif;
+color: #202228;
+}
+
+h1, h2, h3 {
+font-family: 'Lato', sans-serif;
+text-transform: uppercase;
+}
+
+*, *::before, *::after {
+  box-sizing:inherit;
+}
+
+.page-container {
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.hidden {
+  position:absolute;
+  left:-10000px;
+  width:1px;
+  height:1px;
+}
+
+/* 2. SECTIONS */
+
+#main {
+margin: 0 30px;
+}
+
+/* 2a. header */
+
+#header {
+background-color: #202228;
+padding: 1em;
+}
+
+#header h2 {
+display: inline-block;
+word-spacing: -5px;
+}
+
+#header span {
+color: #19c17e;
+}
+    
+/* 2a-1. main-menu */
+
+#main-menu {
+display: inline-block;
+float: right;
+}
+
+#main-menu ul {
+list-style: none;
+padding:0;
+display: inline-block;
+}
+
+#main-menu li {
+display: inline-block;
+margin-right:20px;
+}
+
+/* 2b. sec1 */
+
+#sec1 {
+position: relative;
+}
+
+#image-main {
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+}
+/*#sec1 {
+  position: relative;
+  text-align: center;
+  color: white;
+}*/
+
+/*.sec1-wrapper {
+position: absolute;
+}*/
+
+#sec1 h1 {
+  position: absolute;
+  display: inline-block;
+  padding: 0;
+  top: -20%;
+  left: 10px;
+  white-space: pre-line;
+  line-height: 1em;
+  font-size: 70px;
+  color: white;
+  text-shadow: 2px 2px 2px #112709;
+}
+
+/* 2c. sec2 */
+
+#sec2 {
+padding: 0.5em;
+}
+
+#sec2 h2 {
+text-align: center;
+color: #397153;
+}
+
+#sec2-left {
+display: inline-block;
+border: 0;
+width: 49%;
+padding: inherit;
+}
+
+#sec2-left-img {
+float: left;
+}
+
+.listcontainer {
+display: inline-block;
+width: 40%;
+float: left;
+margin: 0 2em;
+}
+
+#sec2-left-ul {
+display: inline-block;
+padding: 0;
+}
+
+#sec2-right {
+border: 0;
+width: 49%;
+float: right;
+padding: inherit;
+}
+
+.center {
+text-align: center;
+}
+
+/* 2d. sec3 */
+
+#sec3 {
+text-align: center;
+background-color: #defef1;
+padding: 5px 0.5em;
+}
+
+.row {
+overflow: hidden;
+}
+
+.col3 {
+  float:left;
+  width:30%;
+  margin-right:5%;
+}
+
+.col3:last-child {
+  margin-right:0;
+}
+
+#question {
+color: transparent;
+}
+
+/* 2e. sec4 */
+
+#sec4 {
+text-align: center;
+background-color: #19c17e;
+padding: 5px 0.5em 20px;
+}
+
+#sec4 button {
+text-transform: uppercase;
+margin: 0 40%;
+}
+
+#sec4 form {
+line-height: 45px;
+}
+
+#sec4 fieldset {
+display: inline-block;
+text-align: left;
+width: auto;
+border: 1px solid white;
+clear: both;
+margin-bottom: 10px;
+}
+
+#sec4 fieldset label {
+padding: 0 5px;    
+}
+
+/*#interest {
+display: inline-block;
+width: auto;
+border: 1px solid white;
+clear: both;
+margin-bottom: 10px;
+}*/
+
+/* 2f. footer */
+
+#footer {
+background-color: #202228;
+padding: 5px 0.5em 5px;
+}
+
+.col4 {
+  float:left;
+  width:22%;
+  margin-right:1%;
+  margin-bottom:1em;
+  padding-left: 1em;
+}
+
+/*.col4:last-child {
+  margin-right:0;
+  clear:right;
+}*/
+
+#footer-nav {
+padding:10px;
+}
+
+#footer-nav ul {
+list-style: none;
+padding:0;
+}
+
+#footer-nav li {
+list-style: none;
+padding:0;
+}
+
+.cap {
+text-transform: uppercase;
+margin-bottom: 1em;
+}
+
+#copyright {
+color: white;
+padding: 5px;
+border-top: 1px solid #1a9968;
+}
+
+/* 3. LINKS */
+
+a {
+color: #397153;
+}
+
+a:hover{
+color: #01a765;
+text-decoration: none;
+}
+
+#header a, #header a:link, #sec3 a, #sec3 a:link, #footer a, #footer a:link {
+text-decoration: none;
+}
+
+#header a, #header a:link {
+color: white;
+}
+
+#header a:hover {
+color: #19c17e;
+}
+
+#site-name a:hover {
+color: #fff;
+}
+
+#footer a, #footer a:link {
+color: white;
+}
+
+#footer a:hover {
+color: #19c17e;
+}
+
+/* 4. BUTTONS */
+/* 4a. button general */
+
+button {
+border-radius: 5px;
+background-color: #202228;
+color: white;
+}
+
+button:hover {
+background-color: #01a765;
+}
+
+/* 4b. button shadow */
+
+button, button:hover {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    outline:none;
+    box-shadow: none;
+}
+
+/* 4c. section buttons */
+
+#header button {
+background-color: #19c17e;
+color: #202228;
+}
+
+#header button:hover {
+color: #fff;
+}

@@ -1,0 +1,10 @@
+{
+    "autoload": {
+      "psr-4" : {
+        "ONROUTE\\models\\" : "models/"
+      }
+    },
+    "require": {
+        "phpmailer/phpmailer": "^6.4"
+    }
+}

@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=Roboto&display=swap');
+
+/*** TABLE OF CONTENTS ***/
+/*** 1. GENERAL STYLING ***/
+/*** 2. SPECIFIC AREAS ***/
+/*** 3. ANIMATION WORKING AREA ***/
+
+
+
+/*** 1. GENERAL STYLING ***/
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Domine', serif;
+/*font-family: 'Roboto', sans-serif; */
+}
+
+* {
+font-family: 'Roboto', sans-serif;
+}
+
+.pagewrap {
+  max-width:1200px;
+  margin:0 auto;
+  padding: 0 10px;
+}
+
+.hidden {
+  position:absolute;
+  left:-10000px;
+  width:1px;
+  height:1px;
+}
+
+h1 {
+margin: auto;
+}
+
+h2 {
+text-align: center;
+}
+
+/*** 2. SPECIFIC AREAS ***/
+
+nav ul {
+list-style:none;
+margin:0;
+padding:0;
+display: flex;
+justify-content: flex-end;
+}
+
+nav li {
+padding: 10px;
+}
+
+#anime-main {
+  width: inherit;
+  height: 300px;
+  position: relative;
+  background-color: #759438;
+  text-align: center;
+  font-size: 200%;
+}
+
+#anime-main h1 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main {
+display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.mywork:nth-child(3) {
+  page-break-before: always; /* CSS 2.1 syntax */
+  break-before: always; /* New syntax */
+  /*border: black solid 1px;*/
+}
+
+footer {
+background-color: #66B9CC;
+padding: 10px;
+}
+
+footer h2 {
+margin: 0;
+padding: 10px 0 10px 0 
+
+}
+
+form {
+column-count: 3;
+padding-bottom: 2em;
+}
+
+input {
+margin-bottom: 1em;
+break-after: column;
+}
+
+#yourname {
+break-after: column;
+}
+
+input:nth-last-of-type(1) {
+margin-bottom: 0;
+}
+
+/*** 3. ANIMATION WORKING AREA ***/
+/* code-source: https://codepen.io/onge/pen/KwdZpE */
+
+span {
+	color: transparent;
+	animation: blur 10s ease-out infinite;
+	-webkit-animation: blur 10s ease-out infinite;
+}
+
+span:nth-child(1) {
+	animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+}
+span:nth-child(2) {
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+}
+span:nth-child(3) {
+	animation-delay: 1.5s;
+	-webkit-animation-delay: 1.5s;
+}
+
+@keyframes blur {
+	0%		{text-shadow:  0 0 100px #fff; opacity:0;}
+	5%		{text-shadow:  0 0 90px #fff;}
+	15%		{opacity: 1;}
+	20%		{text-shadow:  0 0 0px #fff;}
+	80%		{text-shadow:  0 0 0px #fff;}
+	85%		{opacity: 1;}
+	95%		{text-shadow:  0 0 90px #fff;}
+	100%	{text-shadow:  0 0 100px #fff; opacity:0;}
+}
+
+@-webkit-keyframes blur {
+	0%		{text-shadow:  0 0 100px #fff; opacity:0;}
+	5%		{text-shadow:  0 0 90px #fff;}
+	15%		{opacity: 1;}
+	20%		{text-shadow:  0 0 0px #fff;}
+	80%		{text-shadow:  0 0 0px #fff;}
+	85%		{opacity: 1;}
+	95%		{text-shadow:  0 0 90px #fff;}
+	100%	{text-shadow:  0 0 100px #fff; opacity:0;}
+}
+
+/* code-source: https://tympanus.net/codrops/2011/11/02/original-hover-effects-with-css3/ */
+.view {
+position: relative;
+
+}
+
+.mask {
+position: absolute;
+height: 100%;
+width: 100%;
+text-align: center;
+top:50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.mask h2 {
+ display: block;
+  background-color: black;
+  color: white;
+}
+
+.view p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center
+}
+.view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000
+}
+.view a.info:hover {
+    box-shadow: 0 0 5px #000
+}
+
+/******view-first******/
+
+.view-first img { 
+    transition: all 0.2s linear;
+}
+.view-first .mask {
+    opacity: 0;
+    background-color: rgba(230, 98, 96, 0.7); 
+    transition: all 0.4s ease-in-out;
+}
+.view-first h2 {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.view-first p { 
+    transform: translateY(100px);
+    opacity: 0;
+	transition: all 0.2s linear;
+}
+.view-first a.info{
+    opacity: 0;
+	transition: all 0.2s ease-in-out;
+}
+
+.view-first:hover img { 
+	transform: scale(1.02);
+} 
+.view-first:hover .mask { 
+	opacity: 1;
+}
+.view-first:hover h2,
+.view-first:hover p,
+.view-first:hover a.info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.view-first:hover p {
+    transition-delay: 0.1s;
+}
+.view-first:hover a.info {
+    transition-delay: 0.2s;
+}
+
+/******view-second******/
+
+.view-second img { 
+    transition: all 0.2s linear;
+}
+.view-second .mask {
+    opacity: 0;
+    background-color: rgba(230, 98, 96, 0.7); 
+    transition: all 0.4s ease-in-out;
+}
+.view-second h2 {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.view-second p { 
+    transform: translateY(100px);
+    opacity: 0;
+	transition: all 0.2s linear;
+}
+.view-second a.info{
+    opacity: 0;
+	transition: all 0.2s ease-in-out;
+}
+
+.view-second:hover img { 
+	transform: scale(1.02);
+} 
+.view-second:hover .mask { 
+	opacity: 1;
+}
+.view-second:hover h2,
+.view-second:hover p,
+.view-second:hover a.info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.view-second:hover p {
+    transition-delay: 0.1s;
+}
+.view-second:hover a.info {
+    transition-delay: 0.2s;
+}
+/******view-third******/
+
+.view-third img { 
+    transition: all 0.2s linear;
+}
+.view-third .mask {
+    opacity: 0;
+    background-color: rgba(230, 98, 96, 0.7); 
+    transition: all 0.4s ease-in-out;
+}
+.view-third h2 {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.view-third p { 
+    transform: translateY(100px);
+    opacity: 0;
+	transition: all 0.2s linear;
+}
+.view-third a.info{
+    opacity: 0;
+	transition: all 0.2s ease-in-out;
+}
+
+.view-third:hover img { 
+	transform: scale(1.02);
+} 
+.view-third:hover .mask { 
+	opacity: 1;
+}
+.view-third:hover h2,
+.view-third:hover p,
+.view-third:hover a.info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.view-third:hover p {
+    transition-delay: 0.1s;
+}
+.view-third:hover a.info {
+    transition-delay: 0.2s;
+}
+/******view-fourth******/
+
+.view-fourth img { 
+  transition: all 0.2s linear;
+}
+.view-fourth .mask {
+    opacity: 0;
+    background-color: rgba(230, 98, 96, 0.7); 
+    transition: all 0.4s ease-in-out;
+}
+.view-fourth h2 {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.view-fourth p { 
+    transform: translateY(100px);
+    opacity: 0;
+	transition: all 0.2s linear;
+}
+.view-fourth a.info{
+    opacity: 0;
+	transition: all 0.2s ease-in-out;
+}
+
+.view-fourth:hover img { 
+	transform: scale(1.02);
+} 
+.view-fourth:hover .mask { 
+	opacity: 1;
+}
+.view-fourth:hover h2,
+.view-fourth:hover p,
+.view-fourth:hover a.info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.view-fourth:hover p {
+    transition-delay: 0.1s;
+}
+.view-fourth:hover a.info {
+    transition-delay: 0.2s;
+}

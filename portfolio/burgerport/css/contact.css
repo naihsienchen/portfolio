@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@400;700&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing:inherit;
+}
+
+#pageContainer{
+    max-width: 1200px;
+    margin:auto;
+}
+main {
+    text-align:center;
+}
+section {
+    border: 1px ;
+}
+h1 {
+    background-color: lightgray;
+}
+#mainTitle{
+    background-color: #e3dde4;
+    line-height:2.5em;
+}
+p{
+    width:80%;
+    margin:auto;
+    margin-bottom:10px;
+    margin-top:30px;
+    
+}
+#mainList {
+    display: inline-block;
+}
+#mainlist li {
+    text-align: left;
+    padding:3px;
+}
+.hidden1 {
+    right: 10000px;
+    position: absolute;
+}
+#commonInquiries{
+    height:190px;
+    padding-top:1px;
+}
+#commonInquiries li:hover .hidden1{
+    right:0;
+    position: relative;
+}
+#otherInquiries input, #otherInquiries button {
+    margin: 3px;
+}
+#otherInquiries h2{
+    margin-top:0;
+}
+.fieldDiv{
+    margin:10px;
+}
+#name {
+    width: 10%;
+}
+#email{
+    width:10%;
+}
+#inquiryText {
+    width:40%;
+    height: 75px;
+    font-family:'Open Sans', sans-serif;
+}
+#sendInquiry {
+    width:10%;
+}
+#inquirySubmitted{
+    display:none;
+    text-align:center;
+    margin-bottom:20px;
+}

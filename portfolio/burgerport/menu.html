@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Burger Port - Menu</title>
+        <meta name="description" content="exotic burger experience">
+        <link rel="stylesheet" type="text/css" href="css/global.css">
+        <link rel="stylesheet" type="text/css" href="css/menu.css">
+        <script data-search-pseudo-elements defer src="https://kit.fontawesome.com/d5d901e044.js" crossorigin="anonymous"></script>
+        <script src="js/jquery-3.5.1.js"></script>
+        <script src="js/menu.js"></script>
+    </head>
+
+    <body>
+        <div class="page-container">
+            <!--Header Content-->
+            <header id="header">
+                <a href="index.html"><span id="icon" class="fas fa-hamburger icon" aria-hidden="true"></span>
+                <span class="hidden">icon</span>
+                <h2 id="site-name">Burger
+Port___.</a></h2></a>
+                <nav id=main-menu>
+                <h3 class="hidden">Main navigation</h3>
+                    <ul>
+                        <li><a href="menu.html">menu</a></li>
+                        <li><a href="about_us.html">about us</a></li>
+                        <li><a href="contest.html">contest</a></li>
+                        <li><a href="gift_cards.html">gift cards</a></li>
+                        <li><a href="locations.html">locations</a></li>
+                        <li><a href="contact_us.html">contact us</a></li>
+                        <li><a href="site_map.html">site map</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <main id="main">
+
+                <section id="description">
+                    <h1>Menu</h1>
+                    <p>Note: All burgers served with a choice of 1 side</p>
+                </section>
+
+                <section id="regions">
+                    <div id="regionMain">
+                        <h2 id="regionTitle">Choose a region:</h2>
+                        <ul>
+                            <li id="americanLink"><a href="#regionTitle">American</a></li>
+                            <li id="asianLink"><a href="#regionTitle">Asian</a></li>
+                            <li id="europeanLink"><a href="#regionTitle">European</a></li>
+                            <li id="latinLink"><a href="#regionTitle">Latin</a></li>
+                        </ul>
+                        <p><span id="sidesLink"><a href="#sides">Sides</a></span><span id="allLink"><a href="#regionTitle">View All</a></span></p>
+                    </div>
+                </section>
+
+                <section id="fullMenu">
+                    <div class="regionChoice" id="american">
+                        <h2>American</h2>
+                        <h3>The Classic</h3>
+                        <p>
+                            Classic beef patty topped with lettuce, tomatoe, onions,
+                            American cheese, and our inhouse Burger Port sauce.
+                        </p>
+                        <p class="price">$12.99</p>
+                        <h3>The Hipster</h3>
+                        <p>
+                            A cheesed-stuffed portobello mushroom "patty", topped with arugala,
+                            tomatoes, avocado, mozzarella cheese and mayo.
+                        </p>
+                        <p class="price">$14.99</p>
+                        <h3>The Meat Lover</h3>
+                        <p>
+                           Juicy beef patty topped with bacon, pulled pork, sundried tomatoe, an onion ring
+                           and barbeque mayo.
+                        </p>
+                        <p class="price">$16.99</p>
+                        <h3>The Canadian, Eh?</h3>
+                        <p>
+                           Juicy beef patty topped with poutine. Does it get any more Canadian? (This is classified as North American, okay!)
+                        </p>
+                        <p class="price">$14.99</p>
+                    </div>
+
+                    <div class="regionChoice" id="asian">
+                        <h2>Asian</h2>
+                        <h3>Thai Turkey Burger</h3>
+                        <p>
+                            Delicious turkey patty topped with sweet/creamy/spicy peanut sauce
+                            and a cilantro-cabbage slaw
+                        </p>
+                        <p class="price">$13.99</p>
+                        <h3>Korean BBQ Burger Burger</h3>
+                        <p>
+                            Juicy beef paty mixed with scallions, soy suace, brown sugar, sesames,
+                            ginger and garlic. Topped with a miso-sriracha mayo and sharp pickled vegetables.
+                        </p>
+                        <p class="price">$14.99</p>
+                        <h3>The Bao Burger</h3>
+                        <p>
+                           Crispy pork belly patty sandwiched between a soft bao. Topped with spicy mayo,
+                           cucumbers, pickled carrots, green onions, cilantro, and fresh greens.
+                        </p>
+                        <p class="price">$12.99</p>
+                        <h3>Curry Burger on Rice</h3>
+                        <p>
+                            Beef patty on a plate of rice covered with Indian curry sauce. Topped with a fried egg.
+                            Not a traditional burger, but still a must try!
+                        </p>
+                        <p class="price">$12.99</p>
+                    </div>
+
+                    <div class="regionChoice" id="european">
+                        <h2>European</h2>
+                        <h3>Smoked Salmon Slider</h3>
+                        <p> 
+                            Norwegian smoked salmon patty, topped with garlic mayo and fresh greens. Comes in a set of 3.
+                        </p>
+                        <p class="price">$10.99</p>
+                        <h3>Chicken Parmesean Burger</h3>
+                        <p>
+                            Crispy chicken patty topped with Italian red pasta sauce, parsley, mozzarella, and parmesan cheese.
+                        </p>
+                        <p class="price">$13.99</p>
+                        <h3>French Bistro Burger</h3>
+                        <p>
+                            Delcious beef patty topped with caramelized onions, bacon, brie cheese.
+                            and garlic mayo.
+                        </p>
+                        <p class="price">$15.99</p>
+                    </div>
+
+                    <div class="regionChoice" id="latin">
+                        <h2>Latin</h2>
+                        <h3>Brazilian Beef and Chorizo Burger</h3>
+                        <p>
+                            Unique beef and chorizo mixed patty, topped with ketchup, mayo
+                            tomatoes, avocado, and a fried egg.
+                        </p>
+                        <p class="price">$15.99</p>
+                        <h3>Mexican Taco Burger</h3>
+                        <p>
+                            Taco-seasoned beef patty topped with lettuce, tomatoe, chipotle mayo,
+                            pico de gallo, and Pepper Jack Cheese.
+                        </p>
+                        <p class="price">$14.99</p>
+                        <h3>Chimichurri Burger</h3>
+                        <p>
+                           Delicious beef patty topped with provolone cheese, lettuce, tomatoe, and 
+                           housemade Argentinian chumichurri.
+                        </p>
+                        <p class="price">$13.99</p>
+                    </div>
+
+                    <div id="sides">
+                        <h2>Sides</h2>
+                        <p>Choose from 1 of the following sides:</p>
+                        <ul id="sidesList">
+                            <li>Fries</li>
+                            <li>Wedges</li>
+                            <li>Chips</li>
+                            <li>Onion Rings</li>
+                            <li>Garden Salad</li>
+                            <li>Caesar Salad</li>
+                            <li>Soup of the Day</li>
+                            <li>Pountine (+$2.00)</li>
+                            <li>Sweet Potatoe Fries (+$1.00)</li>
+                        </ul>
+                    </div>
+                </section>
+
+            </main>
+
+            <!-- Footer Content-->
+            <footer id="footer">
+                <nav id="footer-nav">
+                    <h3 class="hidden">Footer navigation</h3>
+                    <div>
+                        <ul class="footer-column">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="menu.html">menu</a></li>
+                        <li><a href="about_us.html">about us</a></li>
+                        <li id="break"><a href="contest.html">contest</a></li>
+                        <li><a href="gift_cards.html">gift cards</a></li>
+                        <li><a href="locations.html">location</a></li>
+                        <li><a href="contact_us.html">contact us</a></li>
+                        <li><a href="site_map.html">site map</a></li>
+                        </ul>
+                    </div>        
+                </nav>
+                <div id="copyright">© Copyright Burger Port, 2020. All rights reserved. This is a fake website for HTTP5103.</div>
+            </footer>
+        </div>
+    </body>
+</html>
+
+
+<!--REFERENCES for burger recipes https://www.brit.co/burger-recipes/ -->

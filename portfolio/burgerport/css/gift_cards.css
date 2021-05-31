@@ -1,0 +1,101 @@
+
+/* -------- General Section Styling -------- */
+h1{
+    font-size: 2em;
+    margin: 0;
+}
+
+section#description p{
+    margin-bottom: 0;
+    padding-bottom: 1em;
+}
+
+#description{
+    text-align: center;
+    padding: 2em;
+    background-color: #e3dde4;
+}
+
+section#description p{
+    padding: 0;
+}
+
+/* -------- Purchase GC Styling -------- */
+
+#giftCard{
+    display:inline-block;
+    border-right: 4px solid black;
+    background-color: #f8f4f0;
+    width: 50%;
+    text-align: center;
+}
+
+#thanksMsg{
+    display: none;
+    margin-top: 100px;
+    height: 330px;
+}
+
+
+/* -------- Check GC Styling -------- */
+#balance{
+    float: right;
+    background-color: #f7f0f7;
+    width: 50%;
+    height: 448px;
+    text-align: center;
+}
+
+#giftCardBalance{
+    padding-top: 5em;
+}
+
+#gcNumberErr, #gcPinErr{
+    font-size: 0.8em;
+    color: red;
+}
+
+#balanceMsg{
+    display: none;
+    margin-top: 140px;
+    height: 330px;
+}
+
+
+
+/* -------- Forms Styling -------- */
+
+.textbox{
+    width: 100%;
+    display: inline-block;
+}
+
+input, #messageBox, button{
+    margin-bottom: 2em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#message{
+    width: 40%;
+    height: 50px;
+    resize: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+label{
+    display: inline-block;
+    width: 25%;
+    text-align: right;
+    margin-right: 0.5em;
+    vertical-align: top;
+}
+
+button{
+    background-color: #564759;
+    color:  #e3dde4;
+}
+
+button:hover{
+    background-color: #e3dde4;
+    color: #564759;
+}

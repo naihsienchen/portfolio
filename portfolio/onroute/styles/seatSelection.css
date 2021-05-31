@@ -1,0 +1,97 @@
+
+/* SEAT SELECTION STYLING */
+main{
+    margin:  0px, auto;
+    padding: 50px;
+    text-align: center;
+}
+td, th{
+    width: 100px;
+}
+
+.seatSelection_flex{
+    padding:40px 100px 40px 100px;
+    margin:50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    border-radius: 20px;
+    background-color: #d9a21b;
+    border-bottom: 2px solid grey;
+    border-left: 2px solid grey;
+}
+
+.seatSelection_flex div{
+    flex: 1 1 11.11111%;
+    text-align: center;
+    margin: 25px;
+}
+
+.seatSelection_flex div:last-child{
+    flex: 1 1 15%;
+    display:flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.seatSelection_btn{
+    font-family: "Poppins", sans-serif;
+    background-color: #fff8f0;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5em 1.5em;
+    transition: 0.2s;
+}
+.seatSelection_btn:hover {
+    background-color: #6cbeb5;
+    border: 1px solid grey;
+  }
+
+
+.available{
+    background: lightblue;
+}
+
+.unavailable{
+    background: red;
+}
+
+
+td{
+    position: relative;
+    padding:0;
+    transition: 0.3s;
+}
+
+.radioButton{
+    position: absolute;
+    opacity: 0;
+    width:100%;
+    height: 100%;
+    left: 0;
+    margin:0;
+    cursor: pointer;
+}
+
+.available:hover{
+    background: blue;
+    color:white;
+}
+
+.selected{
+    background: blue;
+    color:white;
+}
+
+.currentSeat{
+    background: blue;
+    color:white;
+}
+
+tr:first-child{
+    background:gray;
+}

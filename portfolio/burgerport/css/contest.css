@@ -1,0 +1,62 @@
+/*** 1. General styling***/
+html { 
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing:inherit;
+}
+.hidden1 {
+    position: absolute;
+    left: -3000000px;
+}   
+#pageContainer{
+    max-width: 1200px;
+    margin:auto;
+}
+section{
+    padding:10px;
+    text-align: center;
+}
+#raffle{
+    background-color: #e3dde4;
+}
+#prizeDesc{
+    clear:both;
+}
+#tickets{
+    clear:both;
+    background-image: url(../images/prize2.jpg);
+    background-size: cover;
+    padding-left:10%;
+    padding-right:10%;
+}
+#tickets h2{
+    margin-bottom:0;
+}
+form{
+    background-color: white;
+    line-height: 2.5em;
+}
+#cvv{
+    width:10%;
+}
+#expiry{
+    width:10%;
+}
+#fieldDiv{
+    margin:10px;
+}
+
+#purchaseConfirm{
+    display:none
+}
+
+#purchaseTickets{
+    text-align:center;
+    padding-bottom:1px;
+}
+fieldset{
+    margin-right:40px;
+    margin-left:40px;
+    margin-bottom:40px;
+}
